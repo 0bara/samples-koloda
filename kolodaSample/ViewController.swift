@@ -58,14 +58,11 @@ extension ViewController
         
         // load data
         let opt = PHFetchOptions()
-        opt.sortDescriptors = [
-            NSSortDescriptor(key: "creationDate", ascending: false)
-        ]
         // とりあえず画像のみ列挙
         let assets: PHFetchResult = PHAsset.fetchAssets(with: .image, options: opt)
         assets.enumerateObjects({
             (asset, index, stop) -> Void in
-            print("asset: \(asset)")
+//            print("asset: \(asset)")
             self.photoAssets.append(asset as PHAsset)
             guard asset.mediaType == PHAssetMediaType.image else {
                 print("not image")
@@ -81,15 +78,18 @@ import Koloda
 extension ViewController: KolodaViewDelegate
 {
     func kolodaDidRunOutOfCards(_ koloda: KolodaView) {
-        print("#function call.")
+        print("\(#function) call.")
         koloda.reloadData()
     }
-    
+    func koloda(_ koloda: KolodaView, didSelectCardAt index: Int) {
+        print("\(#function) call. index: \(index)")
+    }
 }
 
 extension ViewController: KolodaViewDataSource
 {
     func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
+        print("\(#function) call. index: \(index)")
         let asset = self.photoAssets[index]
         let manager = PHImageManager()
         let opt = PHImageRequestOptions()

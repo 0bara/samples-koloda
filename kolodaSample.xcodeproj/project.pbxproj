@@ -12,9 +12,12 @@
 		A6BCCDCF1FAAAB7E00C7ED91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6BCCDCD1FAAAB7E00C7ED91 /* Main.storyboard */; };
 		A6BCCDD11FAAAB7E00C7ED91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6BCCDD01FAAAB7E00C7ED91 /* Assets.xcassets */; };
 		A6BCCDD41FAAAB7E00C7ED91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6BCCDD21FAAAB7E00C7ED91 /* LaunchScreen.storyboard */; };
+		A86B1D37B90F9EBC2543535D /* Pods_kolodaSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1851B2F968C456EB76BD6199 /* Pods_kolodaSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1851B2F968C456EB76BD6199 /* Pods_kolodaSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kolodaSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DB3F01CFCA9A8F985ED5E95 /* Pods-kolodaSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kolodaSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-kolodaSample/Pods-kolodaSample.release.xcconfig"; sourceTree = "<group>"; };
 		A6BCCDC61FAAAB7E00C7ED91 /* kolodaSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kolodaSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6BCCDC91FAAAB7E00C7ED91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6BCCDCB1FAAAB7E00C7ED91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		A6BCCDD01FAAAB7E00C7ED91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6BCCDD31FAAAB7E00C7ED91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6BCCDD51FAAAB7E00C7ED91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3D051C85131485AE3914803 /* Pods-kolodaSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kolodaSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kolodaSample/Pods-kolodaSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A86B1D37B90F9EBC2543535D /* Pods_kolodaSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E214A1A2F97383F07FBF67C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3D051C85131485AE3914803 /* Pods-kolodaSample.debug.xcconfig */,
+				1DB3F01CFCA9A8F985ED5E95 /* Pods-kolodaSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A6BCCDBD1FAAAB7E00C7ED91 = {
 			isa = PBXGroup;
 			children = (
 				A6BCCDC81FAAAB7E00C7ED91 /* kolodaSample */,
 				A6BCCDC71FAAAB7E00C7ED91 /* Products */,
+				1E214A1A2F97383F07FBF67C /* Pods */,
+				BE928EB06CDB82D9B92D77AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = kolodaSample;
 			sourceTree = "<group>";
 		};
+		BE928EB06CDB82D9B92D77AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1851B2F968C456EB76BD6199 /* Pods_kolodaSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6BCCDD81FAAAB7E00C7ED91 /* Build configuration list for PBXNativeTarget "kolodaSample" */;
 			buildPhases = (
+				096869492437E79468AA7EDC /* [CP] Check Pods Manifest.lock */,
 				A6BCCDC21FAAAB7E00C7ED91 /* Sources */,
 				A6BCCDC31FAAAB7E00C7ED91 /* Frameworks */,
 				A6BCCDC41FAAAB7E00C7ED91 /* Resources */,
+				1E2DD66CBEC5015790F1A1BD /* [CP] Embed Pods Frameworks */,
+				051E2A913A6A45B5B428E58B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		051E2A913A6A45B5B428E58B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kolodaSample/Pods-kolodaSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		096869492437E79468AA7EDC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1E2DD66CBEC5015790F1A1BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kolodaSample/Pods-kolodaSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A6BCCDC21FAAAB7E00C7ED91 /* Sources */ = {
@@ -272,6 +347,7 @@
 		};
 		A6BCCDD91FAAAB7E00C7ED91 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3D051C85131485AE3914803 /* Pods-kolodaSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +363,7 @@
 		};
 		A6BCCDDA1FAAAB7E00C7ED91 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DB3F01CFCA9A8F985ED5E95 /* Pods-kolodaSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
